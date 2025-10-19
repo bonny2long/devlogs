@@ -1,12 +1,12 @@
 :root {
-  --primary: #f9fafb; /* light gray background */
-  --secondary: #ffffff; /* white sections */
-  --accent: #e5e7eb; /* light gray (navbar, hover) */
-  --highlight: #d1d5db; /* subtle border/hover highlight */
+  --primary: #f9fafb; 
+  --secondary: #ffffff; 
+  --accent: #e5e7eb; 
+  --highlight: #d1d5db; 
 
-  --slate: #374151; /* dark gray text */
-  --blue: #3b82f6; /* vibrant blue */
-  --silver: #9ca3af; /* muted gray text */
+  --slate: #374151; 
+  --blue: #3b82f6; 
+  --silver: #9ca3af; 
   --black: #000000;
   --white: #ffffff;
 }
@@ -132,7 +132,7 @@ body {
   color: var(--slate);
   font-size: 2rem;
   margin-bottom: 1.8rem;
-  border-bottom: 3px solid var(--blue); /* blue underline */
+  border-bottom: 3px solid var(--blue);
   padding-bottom: 0.5rem;
 }
 
@@ -166,7 +166,7 @@ body {
   font-size: 1rem;
   font-weight: 500;
   border: none;
-  border-radius: 30px; /* pill style */
+  border-radius: 30px; 
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 4px 10px rgba(59, 130, 246, 0.3);
