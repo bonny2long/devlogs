@@ -1,0 +1,27 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// 1. Database Connection
+// Ensure your .env file has a DATABASE_URL defined for your SQL Server.
+datasource db {
+  provider = "sqlserver"
+  url      = env("DATABASE_URL")
+}
+
+// 2. Prisma Client Generator
+// The client will be generated to node_modules/@prisma/client (the default path).
+generator client {
+  provider = "prisma-client-js"
+  // The custom output line has been removed: output = "./src/generated_prisma"
+}
+
+// 3. Data Model
+model Log {
+  id          Int      @id @default(autoincrement())
+  date        String
+  entryNumber Int
+  week        String
+  topic       String
+  description String
+  createdAt   DateTime @default(now())
+}
